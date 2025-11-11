@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000000;
+    background-color: #000000;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #000000;
+    height: 40px;
+    padding: 0;
+}
+
+.ponteira-vermelha {
+    width: 100px;
+    height: 100%;
+    background-color: #ff0000;
+}
