@@ -15,7 +15,6 @@ class HeroCarousel {
         this.currentIndex = 0;
         this.carouselContainer = document.getElementById('hero-carousel');
         this.timer = null;
-
         this._createImages();
         this._startTimer();
     }
