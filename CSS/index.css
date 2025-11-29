@@ -6,8 +6,17 @@
 }
 
 body {
+    color: white;
+}
+#Matheus {
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(201, 131, 0) 33%, rgb(187, 122, 2) 33%, rgb(196, 160, 1) 66%, rgb(255, 208, 0) 100%);
+}
+
+body {
     background-color: #1a1a1a;
-    color: #ffffff;
 }
 
 header {
@@ -47,9 +56,9 @@ nav a {
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+/* nav a:hover {
     color: #ff0000;
-}
+} */
 
 .btn-agendar-aula {
     background-color: #ff0000;
@@ -68,15 +77,13 @@ nav a:hover {
 
 .hero {
     position: relative;
-    width: 100%;
-    height: 80vh;
+    height: 100vh; /* Agora o hero tem altura própria */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
-    text-align: center;
     overflow: hidden;
 }
+
 
 .carousel-background {
     position: absolute; 
@@ -104,6 +111,7 @@ nav a:hover {
 }
 
 .hero-content {
+    justify-content: center;
     position: relative; 
     z-index: 2;
     padding: 20px;
@@ -169,7 +177,6 @@ footer {
     justify-content: flex-end;
     background-color: #000000;
     height: 40px;
-    padding: 0;
     align-items: center;
 }
 
@@ -177,4 +184,29 @@ footer {
     width: 100px;
     height: 100%;
     background-color: #ff0000;
+}
+
+.infos{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;    
+}
+
+.info {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #bebebe;
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.info:hover {
+    transform: scale(1.05);
 }
